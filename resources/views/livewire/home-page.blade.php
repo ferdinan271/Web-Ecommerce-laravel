@@ -56,7 +56,7 @@
         <div class="col">
           <div class="max-w-xl mx-auto">
             <div class="text-center ">
-              <div class="relative flex flex-col items-center">
+              <div class="relative flex flex-col items-center" data-aos="fade-up">
                 <h1 class="text-5xl font-bold text-gray-900"> Tentang <span class="text-blue-500">Kami
                   </span> </h1>
                 <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
@@ -75,7 +75,7 @@
       </div>
       
       <div class="row d-flex justify-content-center align-items-center mt-20">
-        <div class="col-md-4">
+        <div class="col-md-4"data-aos="fade-up-right">
           <div
           class=" md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Tempat Terbaik untuk  
@@ -88,7 +88,7 @@
           </div>
       </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6" data-aos="fade-up-left">
           <div class="">
             <img class="object-cover object-center rounded" alt="hero" src="{{url('img/gardening.jpg')}}">
           </div>
@@ -105,7 +105,7 @@
           <div class="col">
             <div class="max-w-xl mx-auto">
               <div class="text-center ">
-                <div class="relative flex flex-col items-center">
+                <div class="relative flex flex-col items-center"data-aos="fade-up">
                   <h1 class="text-5xl font-bold text-gray-900"> Produk Unggulan<span class="text-blue-500"> Manizz
                     </span> </h1>
                   <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
@@ -131,7 +131,7 @@
             <div class="col-md-10">
                 <div class="owl-carousel owl-theme">
                   @foreach ($products as $product)
-                      <div class="item">  
+                      <div class="item"data-aos="fade-up">  
                             <div class="rounded overflow-hidden border">
                               
                                     <a href="#"></a>
@@ -190,7 +190,7 @@
     <section class="py-15">
       <div class="max-w-xl mx-auto">
         <div class="text-center ">
-          <div class="relative flex flex-col items-center">
+          <div class="relative flex flex-col items-center"data-aos="fade-up">
             <h1 class="text-5xl font-bold "> Browse Popular<span class="text-blue-500"> Brands
               </span> </h1>
             <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
@@ -213,7 +213,7 @@
         <div class="flex flex-wrap gap-5 justify-center">
       
             @foreach ($brands as $brand)
-            <div class="bg-white rounded-lg border-xl shadow-lg dark:bg-gray-800">
+            <div class="bg-white rounded-lg border-xl shadow-lg dark:bg-gray-800" data-aos="fade-up">
               <a href="/products?selected_brands[0]={{$brand -> id}}" wire:key="{{$brand -> id}}" class="">
                 <img src="{{url('storage', $brand -> image)}}" alt="" class="object-cover w-full h-64 rounded-t-lg">
               </a>
