@@ -29,6 +29,9 @@
                     <a wire:navigate class="font-medium text-gray-900  py-3 md:py-6 " href="/categories">
                         Categories
                     </a>
+                    <a wire:navigate class="font-medium text-gray-900  py-3 md:py-6 " href="/posts" :active="request()->is('posts')">
+                        Artikel
+                    </a>
         
                     <a wire:navigate class="font-medium text-gray-900  py-3 md:py-6 " href="/products">
                         Products

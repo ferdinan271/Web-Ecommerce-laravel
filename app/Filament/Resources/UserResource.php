@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\UserResource\Pages;
 use App\Filament\Resources\UserResource\RelationManagers;
+use App\Filament\Resources\UserResource\RelationManagers\OrdersRelationManager;
 use App\Models\User;
 use Filament\Forms;
 use Filament\Forms\Components\DateTimePicker;
@@ -27,26 +28,29 @@ class UserResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-            ->schema([
-                Forms\Components\TextInput::make('name')
-                    ->required(),
+        ->schema([
+            TextInput::make('name')
+                ->required(),
 
-                Forms\Components\TextInput::make('email')
-                    ->label('Email Address')
-                    ->email()
-                    ->maxLength(255)
-                    ->unique(ignoreRecord: true)
-                    ->required(),
+            TextInput::make('email')
+                ->label('Email Address')
+                ->email()
+                ->maxLength(255)
+                ->unique(ignoreRecord: true)
+                ->required(),
 
-                Forms\Components\DateTimePicker::make('email_verified_at')
-                    ->label('Email Verified At')
-                    ->default(now()),
+            DateTimePicker::make('email_verified_at')
+            ->seconds(false)
+            ->format('Mm/dd/yyyy')
+                ->label('Email Verified At')
 
-                Forms\Components\TextInput::make('password')
-                    ->password()
-                    ->dehydrated(fn($state) => filled($state))
-                    ->required(fn(Page $livewire): bool => $livewire instanceof CreateRecord),
-            ]);
+                ->default(now()),
+
+            TextInput::make('password')
+                ->password()
+                ->dehydrated(fn($state) => filled($state))
+                ->required(fn(Page $livewire): bool => $livewire instanceof CreateRecord),
+        ]);
     }
 
     public static function table(Table $table): Table
@@ -84,7 +88,7 @@ class UserResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            OrdersRelationManager::class
         ];
     }
 
