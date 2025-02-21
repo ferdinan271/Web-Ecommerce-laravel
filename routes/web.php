@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Auth::routes();
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, ])->name('home');
 
 
 Route::get('/', HomePage::class);
@@ -28,6 +28,3 @@ Route::get('/my-orders/{order}', MyOrderDetailPage::class);
 Route::get('/success', SuccessPage::class);
 Route::get('/cancel', CancelPage::class);
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
