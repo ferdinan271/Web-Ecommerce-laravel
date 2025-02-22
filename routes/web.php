@@ -16,8 +16,17 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
+Route::middleware('auth')->group(function (){
+    Route::get('/checkout', CheckOutPage::class);
+    Route::get('/my-orders', MyOrdersPage::class);
+    Route::get('/my-orders/{order}', MyOrderDetailPage::class);
+    
+});
+
 Auth::routes();
+
 Route::get('/', [App\Http\Controllers\HomeController::class, ])->name('home');
+
 
 
 Route::get('/', HomePage::class);
@@ -25,9 +34,7 @@ Route::get('/categories', CategoriesPage::class);
 Route::get('/products', ProductsPage::class);
 Route::get('/products/{slug}', ProductDetailPage::class)->name('product.show');
 Route::get('/cart', CartPage::class);
-Route::get('/checkout', CheckOutPage::class);
-Route::get('/my-orders', MyOrdersPage::class);
-Route::get('/my-orders/{order}', MyOrderDetailPage::class);
+
 Route::get('/success', SuccessPage::class);
 Route::get('/cancel', CancelPage::class);
 
