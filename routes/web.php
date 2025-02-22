@@ -23,7 +23,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, ])->name('home');
 Route::get('/', HomePage::class);
 Route::get('/categories', CategoriesPage::class);
 Route::get('/products', ProductsPage::class);
-Route::get('/products/{product}', ProductDetailPage::class)->name('product.show');
+Route::get('/products/{slug}', ProductDetailPage::class)->name('product.show');
 Route::get('/cart', CartPage::class);
 Route::get('/checkout', CheckOutPage::class);
 Route::get('/my-orders', MyOrdersPage::class);
