@@ -5,7 +5,7 @@
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
                     <div>Login</div>
-                    <a href="/register">Sudah Memilik Akun ?</a>
+                    <a href="/register" class="text-blue-500">Belum Memiliki Akun ?</a>
                 </div>
                 
                 

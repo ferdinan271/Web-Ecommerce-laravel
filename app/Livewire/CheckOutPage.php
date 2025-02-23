@@ -8,6 +8,7 @@
     use Illuminate\Support\Facades\Auth;
     use Illuminate\Support\Facades\Auth as FacadesAuth;
     use Livewire\Component;
+use Midtrans\Snap;
 
     class CheckOutPage extends Component
     {
@@ -73,12 +74,38 @@
 
         $redirect_url = '';
 
-            // Bermasalahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh ga bisa dip
-
-        if($this->payment_method == 'state'){
-                $redirect_url = route('success');
-        }else{
+        
+        if($this->payment_method == 'cod'){
+                
             $redirect_url = route('success');
+                            
+        }else{
+            $token = 'm5BGbStsymaP588HPyoo';
+            $nama = $address -> first_name;
+            $no_wa = $address->phone;
+            $pesan = 'Halo ' .$nama .' Silahkan Kirimkan Bukti Transfer Ke Admin Maniz Untuk Melanjutkan Pembayaran :D';
+        
+
+                $curl = curl_init();
+
+                curl_setopt_array($curl, array(
+                CURLOPT_URL => 'https://api.fonnte.com/send',
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => '',
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 0,
+                CURLOPT_FOLLOWLOCATION => true,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => 'POST',
+                CURLOPT_POSTFIELDS => array('target' => $no_wa,'message' => $pesan),
+                CURLOPT_HTTPHEADER => array(
+                    'Authorization:'.$token
+                ),
+                ));
+
+                $response = curl_exec($curl);
+                curl_close($curl);
+                $redirect_url = route('successState');
         }
             
         $order->save();

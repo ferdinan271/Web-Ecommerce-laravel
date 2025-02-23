@@ -10,6 +10,7 @@ use App\Livewire\MyOrdersPage;
 use App\Livewire\ProductDetailPage;
 use App\Livewire\ProductsPage;
 use App\Livewire\SuccessPage;
+use App\Livewire\SuccessState;
 use App\Models\CategoryPost;
 use App\Models\Post;
 use App\Models\User;
@@ -31,11 +32,12 @@ Route::get('/', [App\Http\Controllers\HomeController::class, ])->name('home');
 
 Route::get('/', HomePage::class);
 Route::get('/categories', CategoriesPage::class);
-Route::get('/products', ProductsPage::class);
+Route::get('/products', ProductsPage::class)->name('product');
 Route::get('/products/{slug}', ProductDetailPage::class)->name('product.show');
 Route::get('/cart', CartPage::class);
 
 Route::get('/success', SuccessPage::class)->name('success');
+Route::get('/successState', SuccessState::class)->name('successState');
 Route::get('/cancel', CancelPage::class)->name('cancle');
 
 
