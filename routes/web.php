@@ -35,8 +35,8 @@ Route::get('/products', ProductsPage::class);
 Route::get('/products/{slug}', ProductDetailPage::class)->name('product.show');
 Route::get('/cart', CartPage::class);
 
-Route::get('/success', SuccessPage::class);
-Route::get('/cancel', CancelPage::class);
+Route::get('/success', SuccessPage::class)->name('success');
+Route::get('/cancel', CancelPage::class)->name('cancle');
 
 
 Route::get('/posts', function () {
