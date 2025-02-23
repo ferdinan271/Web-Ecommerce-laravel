@@ -5,8 +5,7 @@
     use App\Helpers\CartManagement;
     use App\Models\Address;
     use App\Models\Order;
-    use Illuminate\Auth\Middleware\Authorize;
-    use Illuminate\Container\Attributes\Auth;
+    use Illuminate\Support\Facades\Auth;
     use Illuminate\Support\Facades\Auth as FacadesAuth;
     use Livewire\Component;
 
@@ -21,12 +20,9 @@
         public $zip_code;
         public $payment_method;
 
-        
 
         public function placeOrder(){
-
-        
-
+          
             $this->validate([
                 'first_name' => 'required',
                 'last_name' => 'required',
@@ -43,7 +39,7 @@
             $line_items = [];
 
             foreach($cart_items as $item){
-                $line_items[]=[
+                $line_items[] = [
                     'price_data' =>[
                         'currency' => 'idr',
                         'unit_amount' => $item['unit_amount'] * 100,
@@ -54,16 +50,17 @@
                     'quantity' => $item['quantity'],
                 ];
             }
-            $order = new Order();
-        $order -> user_id = auth()->user()->id;
-        $order -> grand_total = CartManagement::calculateGrandTotal($cart_items);
-        $order -> payment_method = $this->payment_method;
-        $order -> payment_method = 'pending';
-        $order -> status = 'new';
-        $order -> currency = 'idr';
-        $order -> shipping_amount = '0';
-        $order -> shipping_method = 'none';
-        $order -> notes = 'Order Placed by'. auth()->user()->name;
+        $user = Auth::id();
+
+        $order = new Order();
+        $order->user_id = $user;
+        $order->grand_total = CartManagement::calculateGrandTotal($cart_items);
+        $order->payment_method = $this->payment_method;
+        $order->payment_status = 'pending';
+        $order->status = 'new';
+        $order->currency = 'idr';
+        $order->shipping_method = 'none';
+        $order->    notes = 'Order Placed by'. $user;
 
         $address = new Address();
         $address -> first_name = $this -> first_name;
@@ -74,11 +71,11 @@
         $address -> state = $this -> state;
         $address -> zip_code = $this -> zip_code;
 
-        $redirect = '';
+        $redirect_url = '';
 
-            // Bermasalahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh ga bisa dipencet
+            // Bermasalahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh ga bisa dip
 
-        if($this->payment_method === 'cod'){
+        if($this->payment_method == 'state'){
                 $redirect_url = route('success');
         }else{
             $redirect_url = route('success');
@@ -88,7 +85,7 @@
         $address->order_id = $order->id;
         $address ->save();
         $order->items()->createMany($cart_items);
-        CartManagement::ClearCartItems();
+        CartManagement::clearCartItems();
         return redirect($redirect_url);
     }
 

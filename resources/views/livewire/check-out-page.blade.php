@@ -48,9 +48,9 @@
 							<label class="block text-gray-700  mb-1" for="address">
 								Address
 							</label>
-							<input wire:model='address' class="w-full rounded-lg border py-2 px-3 shadow " id="address" type="text">
+							<input wire:model='street_address' class="w-full rounded-lg border py-2 px-3 shadow " id="address" type="text">
 							</input>
-							@error('state')
+							@error('street_address')
 								<div class="text-red-500 text-sm">{{$message}}</div>
 								@enderror
 						</div>
@@ -92,8 +92,9 @@
 					</div>
 					<ul class="grid w-full gap-6 md:grid-cols-2">
 						<li>
-							<input wire:model='payment_method' class="hidden peer" id="hosting-small" required="" type="radio" value="cod" />
-							<label class="inline-flex items-center justify-between w-full p-3 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100" for="hosting-small">
+							<input wire:model='payment_method'  class="hidden peer" id="hosting-small"  type="radio" value="cod" />
+							<label class="inline-flex items-center justify-between w-full p-3 text-gray-500 bg-white border border-gray-200 
+							rounded-lg cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100" for="hosting-small">
 								<div class="block">
 									<div class="w-full text-lg font-semibold">
 										Cash on Delivery
@@ -107,7 +108,8 @@
 						</li>
 						<li>
 							<input wire:model='payment_method' class="hidden peer" id="hosting-big" type="radio" value="stripe">
-							<label class="inline-flex items-center justify-between w-full p-3 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100" for="hosting-big">
+							<label class="inline-flex items-center justify-between w-full p-3 text-gray-500 bg-white border
+								border-gray-200 rounded-lg cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100" for="hosting-big">
 								<div class="block">
 									<div class="w-full text-lg font-semibold">
 										Stripe
