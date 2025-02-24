@@ -3,9 +3,18 @@
     <div class="row d-flex align-items-center py-48 justify-center">
         <div class="col-md-8">
             <div class="mx-auto  lg:text-center">
-                <p data-aos="fade-up"
-                    class="mt-2 text-4xl font-bold tracking-tight  text-gray-900 sm:text-5xl lg:text-balance">
-                    Tentang Kami</p>
+                <div class="relative flex flex-col items-center"data-aos="fade-up">
+                    <h1 class="text-5xl font-bold text-gray-900"> Tentang<span class="text-blue-500"> kami
+                      </span> </h1>
+                    <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
+                      <div class="flex-1 h-2 bg-blue-200">
+                      </div>
+                      <div class="flex-1 h-2 bg-blue-400">
+                      </div>
+                      <div class="flex-1 h-2 bg-blue-600">
+                      </div>
+                    </div>
+                  </div>
                 <p data-aos="fade-up" class="mt-6 text-xl text-gray-600">SmartCinnamon adalah platform digital yang dirancang untuk mengoptimalkan pengelolaan dan pemasaran produk kayu manis secara lebih luas. Melalui website ini, petani dan kelompok wanita tani dapat mengakses informasi seputar produksi, pemasaran digital, sertainovasi produk berbasis kayu manis. Dengan konsep ini, SmartCinnamon berperan dalam meningkatkandaya saing produk lokal dan mendukung ekonomi sirkular yang berkelanjutan.</p>
             </div>
         </div>
@@ -17,9 +26,18 @@
         <div class="row py-10 ">
             <div class="col">
                 
-                <h2 data-aos="fade-up" class="text-center font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
-                  Kenapa Kita ?
-                </h2>
+                <div class="relative flex flex-col items-center"data-aos="fade-up">
+                    <h1 class="text-5xl font-bold text-gray-900"> Kenapa<span class="text-blue-500"> Kita ?
+                      </span> </h1>
+                    <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
+                      <div class="flex-1 h-2 bg-blue-200">
+                      </div>
+                      <div class="flex-1 h-2 bg-blue-400">
+                      </div>
+                      <div class="flex-1 h-2 bg-blue-600">
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
 
@@ -62,9 +80,20 @@
 
     <div class="container mt-5">
         <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-            <h1 data-aos="fade-up" class="text-5xl mb-5 font-bold text-center">Tim Kami</h1>
+            <div class="relative flex flex-col items-center"data-aos="fade-up">
+                <h1 class="text-5xl font-bold text-gray-900"> Anggota<span class="text-blue-500"> Kami
+                  </span> </h1>
+                <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
+                  <div class="flex-1 h-2 bg-blue-200">
+                  </div>
+                  <div class="flex-1 h-2 bg-blue-400">
+                  </div>
+                  <div class="flex-1 h-2 bg-blue-600">
+                  </div>
+                </div>
+              </div>
 
-            <div data-aos="fade-up" class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+            <div data-aos="fade-up" class="grid grid-cols-1 my-5 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                 <a href="#" class="group">
                     <img src="{{ url('img/ibu.svg') }}"
                         alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."

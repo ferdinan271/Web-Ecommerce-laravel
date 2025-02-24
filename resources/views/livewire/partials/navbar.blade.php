@@ -27,8 +27,11 @@
                     <a wire:navigate class="font-medium text-gray-900  py-3 md:py-6 " href="/about">
                         Tentang Kami
                     </a>
-                    <a wire:navigate class="font-medium text-gray-900  py-3 md:py-6 " href="/posts" :active="request()->is('posts')">
+                    <a wire:navigate class="font-medium text-gray-900  py-3 md:py-6 " href="/artikel" :active="request()->is('posts')">
                         Artikel
+                    </a>
+                    <a wire:navigate class="font-medium text-gray-900  py-3 md:py-6 " href="/skill" :active="request()->is('posts')">
+                        Pelatihan
                     </a>
         
                     <a wire:navigate class="font-medium text-gray-900  py-3 md:py-6 " href="/products">
