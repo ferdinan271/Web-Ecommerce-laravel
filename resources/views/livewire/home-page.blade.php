@@ -6,16 +6,18 @@
         <div class="relative">
             <div class="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
                 <div class="w-full lg:w-2/3 xl:w-1/2">
-                    <h1 class="font-sans text-4xl font-normal italic tracking-tight text-white text-opacity-70">Maniz</h1>
                     <p class=" tracking-tighter text-white">
-                        <span class="font-sans font-normal text-7xl">Jelajahi Keajaiban</span><br />
-                        <span class="font-serif italic font-normal text-8xl">Kayu Manis</span>
+                        <span class="font-semibold text-6xl">Keaslian Rasa,</span><br />
+                        <span class=" font-semibold text-5xl">Hangatkan Suasana</span>
                     </p>
-                    <p class="mt-12 font-sans text-base font-normal leading-7 text-white text-opacity-70">Di Maniz, kami percaya bahwa kayu manis bukan hanya rempah, tetapi juga warisan alam yang kaya manfaat. Kami hadir untuk memberikan informasi menarik serta menghadirkan produk kayu manis terbaik untuk Anda.</p>
+                    <p class="mt-10 text-base leading-7 text-white text-opacity-70">Dari taburan kecil di atas kopi,
+                      campuran dalam kue, hingga bahan rahasia dalam masakan favoritmu, kayu manis menghadirkan sentuhan
+                      istimewa yang tak terlupakan. Rasakan kelembutan, kehangatan, dan manfaat luar biasa dalam setiap
+                      kepingan kayu manis pilihan kami.</p>
     
                     <div class="flex items-center mt-5 space-x-3 sm:space-x-4">
                         <a
-                            href="#"
+                            href="/#about"
                             title=""
                             class="
                                 inline-flex
@@ -37,10 +39,8 @@
                             "
                             role="button"
                         >
-                            <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.0416 4.9192C7.37507 4.51928 6.5271 4.99939 6.5271 5.77669L6.5271 18.2232C6.5271 19.0005 7.37507 19.4806 8.0416 19.0807L18.4137 12.8574C19.061 12.469 19.061 11.5308 18.4137 11.1424L8.0416 4.9192Z" />
-                            </svg>
-                            Tentang Kami
+                            
+                        Lihat Selengkapnya
                         </a>
                     </div>
                 </div>
@@ -51,7 +51,64 @@
   {{-- End Hero Section --}}
 
     {{-- About Us --}}
-    <div class="container  py-20">
+
+    <section id="about">
+      <div class="container mt-5">
+        <div class="row flex items-center" >
+              <div class="col-md-5" data-aos="fade-up-right">
+                <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-5xl">Rasakan Hangatnya
+                  Kelezatan Kayu Manis dalam Setiap Olahan!</h1>
+              <p class="mt-4 text-xl text-gray-500">Taburan kecil di atas kopi, campuran dalam kue,
+                  hingga bahan rahasia dalam masakan favoritmu, kayu manis menghadirkan sentuhan istimewa yang
+                  tak terlupakan.</p>
+              </div>
+  
+              <div class="col-md-5 offset-md-1">
+                <div class="flex items-center space-x-6 lg:space-x-8">
+                  <div class="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div data-aos="fade-up-left"
+                          class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                          <img src="{{url('img/about.jpg')}}" alt=""
+                              class="size-full object-cover">
+                      </div>
+                      <div data-aos="fade-up-left" class="h-64 w-44 overflow-hidden rounded-lg">
+                          <img src="{{url('img/about.jpg')}}" alt=""
+                              class="size-full object-cover">
+                      </div>
+                  </div>
+                  <div data-aos="fade-up-left" class="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                          <img src="{{url('img/about.jpg')}}" alt=""
+                              class="size-full object-cover">
+                      </div>
+                      <div data-aos="fade-up-left" class="h-64 w-44 overflow-hidden rounded-lg">
+                          <img src="{{url('img/about.jpg')}}" alt=""
+                              class="size-full object-cover">
+                      </div>
+                      <div data-aos="fade-up-left" class="h-64 w-44 overflow-hidden rounded-lg">
+                          <img src="{{url('img/about.jpg')}}" alt=""
+                              class="size-full object-cover">
+                      </div>
+                  </div>
+                  <div data-aos="fade-up-left" class="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                          <img src="{{url('img/about.jpg')}}" alt=""
+                              class="size-full object-cover">
+                      </div>
+                      <div data-aos="fade-up-left" class="h-64 w-44 overflow-hidden rounded-lg">
+                          <img src="{{url('img/about.jpg')}}" alt=""
+                              class="size-full object-cover">
+                      </div>
+                  </div>
+              </div>
+              </div>
+        </div>
+      </div>
+    </section>
+
+          
+
+    {{-- <div class="container  py-20">
       <div class="row">
         <div class="col">
           <div class="max-w-xl mx-auto">
@@ -95,7 +152,7 @@
       </div>
     </div>
 
-    </div>                                
+    </div>                                 --}}
     {{-- About Us --}}
   
     {{-- Our Porduct --}}

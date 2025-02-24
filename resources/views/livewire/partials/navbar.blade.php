@@ -24,8 +24,8 @@
         
                     <a wire:navigate class="font-medium text-blue-600 py-3 md:py-6 " href="/" aria-current="page">Home</a>
         
-                    <a wire:navigate class="font-medium text-gray-900  py-3 md:py-6 " href="/categories">
-                        Categories
+                    <a wire:navigate class="font-medium text-gray-900  py-3 md:py-6 " href="/about">
+                        Tentang Kami
                     </a>
                     <a wire:navigate class="font-medium text-gray-900  py-3 md:py-6 " href="/posts" :active="request()->is('posts')">
                         Artikel

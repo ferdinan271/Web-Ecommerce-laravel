@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\AboutPage;
 use App\Livewire\CancelPage;
 use App\Livewire\CartPage;
 use App\Livewire\CategoriesPage;
@@ -21,24 +22,22 @@ Route::middleware('auth')->group(function (){
     Route::get('/checkout', CheckOutPage::class);
     Route::get('/my-orders', MyOrdersPage::class);
     Route::get('/my-orders/{order}', MyOrderDetailPage::class);
+        
+    Route::get('/success', SuccessPage::class)->name('success');
+    Route::get('/successState', SuccessState::class)->name('successState');
+    Route::get('/cancel', CancelPage::class)->name('cancle');
+
     
 });
 
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, ])->name('home');
-
-
 
 Route::get('/', HomePage::class);
-Route::get('/categories', CategoriesPage::class);
+Route::get('/about', AboutPage::class);
 Route::get('/products', ProductsPage::class)->name('product');
 Route::get('/products/{slug}', ProductDetailPage::class)->name('product.show');
 Route::get('/cart', CartPage::class);
-
-Route::get('/success', SuccessPage::class)->name('success');
-Route::get('/successState', SuccessState::class)->name('successState');
-Route::get('/cancel', CancelPage::class)->name('cancle');
 
 
 Route::get('/posts', function () {
