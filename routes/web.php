@@ -25,6 +25,11 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/generate', function(){
+    \Illuminate\Support\Facades\Artisan::call('storage:link');
+    echo 'ok';
+ });
+
 Route::middleware('auth')->group(function (){
     Route::get('/checkout', CheckOutPage::class);
     Route::get('/my-orders', MyOrdersPage::class)->name('my-orders');
@@ -37,7 +42,6 @@ Route::middleware('auth')->group(function (){
     
 });
 Auth::routes();
-
 
 
 Route::get('/', HomePage::class);

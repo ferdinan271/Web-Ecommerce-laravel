@@ -71,31 +71,31 @@
                               class="size-full object-cover">
                       </div>
                       <div data-aos="fade-up-left" class="h-64 w-44 overflow-hidden rounded-lg">
-                          <img src="{{url('img/about.jpg')}}" alt=""
+                          <img src="{{url('img/1.jpg')}}" alt=""
                               class="size-full object-cover">
                       </div>
                   </div>
                   <div data-aos="fade-up-left" class="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div class="h-64 w-44 overflow-hidden rounded-lg">
-                          <img src="{{url('img/about.jpg')}}" alt=""
+                          <img src="{{url('img/2.jpg')}}" alt=""
                               class="size-full object-cover">
                       </div>
                       <div data-aos="fade-up-left" class="h-64 w-44 overflow-hidden rounded-lg">
-                          <img src="{{url('img/about.jpg')}}" alt=""
+                          <img src="{{url('img/3.jpg')}}" alt=""
                               class="size-full object-cover">
                       </div>
                       <div data-aos="fade-up-left" class="h-64 w-44 overflow-hidden rounded-lg">
-                          <img src="{{url('img/about.jpg')}}" alt=""
+                          <img src="{{url('img/4.jpeg')}}" alt=""
                               class="size-full object-cover">
                       </div>
                   </div>
                   <div data-aos="fade-up-left" class="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div class="h-64 w-44 overflow-hidden rounded-lg">
-                          <img src="{{url('img/about.jpg')}}" alt=""
+                          <img src="{{url('img/5.jpg')}}" alt=""
                               class="size-full object-cover">
                       </div>
                       <div data-aos="fade-up-left" class="h-64 w-44 overflow-hidden rounded-lg">
-                          <img src="{{url('img/about.jpg')}}" alt=""
+                          <img src="{{url('img/gardening.jpg')}}" alt=""
                               class="size-full object-cover">
                       </div>
                   </div>
