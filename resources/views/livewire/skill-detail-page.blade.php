@@ -24,9 +24,9 @@
                     <iframe width="1080px" height="720px" src="https://www.youtube.com/embed/7ZDWl2MnumA?si=iQwGEWg7C5P0vbv_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             
-                <div class="flex flex-col lg:flex-row lg:space-x-12">
+                <div class="flex justify-center flex-col lg:flex-row lg:space-x-12">
             
-                    <div class="px-4 lg:px-0 mt-12 text-gray-700 text-lg leading-relaxed w-full lg:w-3/4">
+                    <div class="px-4  lg:px-0 mt-12 text-gray-700 text-lg leading-relaxed w-full lg:w-3/4 text-center">
                     <p class="pb-6">Advantage old had otherwise sincerity dependent additions. It in adapted natural hastily is
                         justice. Six draw
                         you him full not mean evil. Prepare garrets it expense windows shewing do an. She projection advantages
@@ -89,26 +89,7 @@
             
                     </div>
             
-                    <div class="w-full lg:w-1/4 m-auto mt-12 max-w-screen-sm">
-                    <div class="p-4 border-t border-b md:border md:rounded">
-                        <div class="flex py-2">
-                        <img src="https://randomuser.me/api/portraits/men/97.jpg"
-                            class="h-10 w-10 rounded-full mr-2 object-cover" />
-                        <div>
-                            <p class="font-semibold text-gray-700 text-sm"> Mike Sullivan </p>
-                            <p class="font-semibold text-gray-600 text-xs"> Editor </p>
-                        </div>
-                        </div>
-                        <p class="text-gray-700 py-3">
-                        Mike writes about technology
-                        Yourself required no at thoughts delicate landlord it be. Branched dashwood do is whatever it.
-                        </p>
-                        <button class="px-2 py-1 text-gray-100 bg-green-700 flex w-full items-center justify-center rounded">
-                        Follow 
-                        <i class='bx bx-user-plus ml-2' ></i>
-                        </button>
-                    </div>
-                    </div>
+                    
             
                 </div>
                 </main>

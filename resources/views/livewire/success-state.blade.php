@@ -2,16 +2,27 @@
     <div class="justify-center mt-3 mb-5 flex-1 max-w-4xl px-4 py-5 mx-auto bg-white border rounded-md dark:border-gray-900 dark:bg-gray-900 md:py-10 md:px-10">
     <div>
         <h1 class="px-4 mb-8 text-2xl font-semibold tracking-wide text-gray-700  ">
-        Thank you. Your order has been received. </h1>
+        Silahkan Transfer Ke<br> Nomor Rekening Di Bawah Ini </h1>
         <div class="flex border-b border-gray-200 dark:border-gray-700  items-stretch justify-start w-full h-full px-4 mb-8 md:flex-row xl:flex-col md:space-x-6 lg:space-x-8 xl:space-x-0">
         <div class="flex items-start justify-start flex-shrink-0">
             <div class="flex items-center justify-center w-full pb-6 space-x-4 md:justify-start">
             <div class="flex flex-col items-start justify-start space-y-2">
-                <p class="text-lg font-semibold leading-4 text-left text-gray-800 ">
-                Cielo Schimmel</p>
-                <p class="text-sm leading-4 text-gray-600 ">71582 Schmitt Springs</p>
-                <p class="text-sm leading-4 text-gray-600 ">Castro Valley, Delaware, 53476-0454</p>
-                <p class="text-sm leading-4 cursor-pointer ">Phone: 587-019-6103</p>
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <img src="{{url('img/bri-logo.png')}}" style="width: 10rem" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="text-2xl font-semibold tracking-wide text-gray-700">214601015554501</h1>
+                        <div class="row">
+                            <h1 class="text-2xl font-semibold tracking-wide text-gray-700">Ariq Mudrik Fakhrudin</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h1 class="px-2  text-lg  tracking-wide text-gray-700  ">
+                        <span class="fw-bold text-red-500">Note*<br></span>
+                        Kami Telah Menghubungi Anda Silahkan Kirim Bukti Transfer Anda ke Nomor Tersebut </h1>
+                </div>
             </div>
             </div>
         </div>
@@ -21,25 +32,27 @@
             <p class="mb-2 text-sm leading-5 text-gray-600  ">
             Order Number: </p>
             <p class="text-base font-semibold leading-4 text-gray-800 ">
-            29</p>
+            {{$order->id}}</p>
         </div>
         <div class="w-full px-4 mb-4 md:w-1/4">
             <p class="mb-2 text-sm leading-5 text-gray-600  ">
             Date: </p>
             <p class="text-base font-semibold leading-4 text-gray-800 ">
-            17-02-2024</p>
+           {{$order->created_at->format('d-m-Y')}}
+        </p>
         </div>
         <div class="w-full px-4 mb-4 md:w-1/4">
             <p class="mb-2 text-sm font-medium leading-5 text-gray-800  ">
             Total: </p>
             <p class="text-base font-semibold leading-4 text-blue-600 ">
-            ₹157,495.00</p>
+           {{Number::currency($order->grand_total, 'IDR')}}
+        </p>
         </div>
         <div class="w-full px-4 mb-4 md:w-1/4">
             <p class="mb-2 text-sm leading-5 text-gray-600  ">
             Payment Method: </p>
             <p class="text-base font-semibold leading-4 text-gray-800  ">
-            Transfer </p>
+            {{$order->payment_method == 'cod'? 'Cash on Delivery':'Transfer'}} </p>
         </div>
         </div>
         <div class="px-4 mb-10">
@@ -49,21 +62,21 @@
             <div class="flex flex-col items-center justify-center w-full pb-4 space-y-4 border-b border-gray-200 dark:border-gray-700">
                 <div class="flex justify-between w-full">
                 <p class="text-base leading-4 text-gray-800 ">Subtotal</p>
-                <p class="text-base leading-4 text-gray-600 ">₹157,495.00</p>
+                <p class="text-base leading-4 text-gray-600 "> {{Number::currency($order->grand_total, 'IDR')}}</p>
                 </div>
                 <div class="flex items-center justify-between w-full">
                 <p class="text-base leading-4 text-gray-800 ">Discount
                 </p>
-                <p class="text-base leading-4 text-gray-600 ">00</p>
+                <p class="text-base leading-4 text-gray-600 "> {{Number::currency(0, 'IDR')}}</p>
                 </div>
                 <div class="flex items-center justify-between w-full">
                 <p class="text-base leading-4 text-gray-800 ">Shipping</p>
-                <p class="text-base leading-4 text-gray-600 ">00</p>
+                <p class="text-base leading-4 text-gray-600 "> {{Number::currency(0, 'IDR')}}</p>
                 </div>
             </div>
             <div class="flex items-center justify-between w-full">
                 <p class="text-base font-semibold leading-4 text-gray-800 ">Total</p>
-                <p class="text-base font-semibold leading-4 text-gray-600 ">₹157,495.00</p>
+                <p class="text-base font-semibold leading-4 text-gray-600 "> {{Number::currency($order->grand_total, 'IDR')}}</p>
             </div>
             </div>
             <div class="flex flex-col w-full px-2 space-y-4 md:px-8 ">
@@ -91,10 +104,10 @@
         <a href="/products" class="w-full text-center px-4 py-2 text-blue-500 border border-blue-500 rounded-md md:w-auto hover:text-white hover:bg-blue-600 dark:border-gray-700 dark:hover:bg-gray-700 ">
             Go back shopping
         </a>
-        <a href="/orders" class="w-full text-center px-4 py-2 bg-blue-500 rounded-md text-gray-50 md:w-auto  hover:bg-blue-600 dark:hover:bg-gray-700 dark:bg-gray-800">
+        <a href="/my-orders" class="w-full text-center px-4 py-2 bg-blue-500 rounded-md text-gray-50 md:w-auto  hover:bg-blue-600 dark:hover:bg-gray-700 dark:bg-gray-800">
             View My Orders
         </a>
         </div>
     </div>
     </div>
-</section>
+</section>  

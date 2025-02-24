@@ -1,120 +1,70 @@
 <section>
-    <div class="container">
+  <div class="container">
 
-        <div class="max-w-screen-lg mx-auto">
-            <!-- header -->
-         
-            <!-- header ends here -->
-        
-            <main class="mt-10">
-        
-              <div class="mb-4 md:mb-0 w-full mx-auto relative">
-                <div class="px-4 lg:px-0">
-                  <h2 class="text-4xl font-semibold text-gray-800 leading-tight">
-                    Pellentesque a consectetur velit, ac molestie ipsum. Donec sodales, massa et auctor.
+      <div class="max-w-screen-lg mx-auto">
+
+          <main class="mt-10">
+     
+      
+     
+          <div class="md:mb-0 w-full mx-auto relative">
+              
+           
+                  <img src="{{url('img/banner.jpeg')}}" class="w-full object-cover lg:rounded" style="height: 28em;"/>
+              
+              <div class="px-4 mt-5 lg:px-0 flex flex-col lg:flex-row justify-center lg:space-x-12">
+                  <h2 class="text-4xl text-center font-semibold text-gray-800 leading-tight">
+                    Tips Packing Makanan agar Aman Sampai Tujuan
                   </h2>
-                  <a 
-                    href="#"
-                    class="py-2 text-green-700 inline-flex items-center justify-center mb-2"
-                  >
-                    Cryptocurrency
-                  </a>
-                </div>
-        
-                <img src="https://images.unsplash.com/photo-1587614387466-0a72ca909e16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" class="w-full object-cover lg:rounded" style="height: 28em;"/>
-              </div>
-        
-              <div class="flex flex-col lg:flex-row lg:space-x-12">
-        
-                <div class="px-4 lg:px-0 mt-12 text-gray-700 text-lg leading-relaxed w-full lg:w-3/4">
-                  <p class="pb-6">Advantage old had otherwise sincerity dependent additions. It in adapted natural hastily is
-                    justice. Six draw
-                    you him full not mean evil. Prepare garrets it expense windows shewing do an. She projection advantages
-                    resolution son indulgence. Part sure on no long life am at ever. In songs above he as drawn to. Gay was
-                    outlived peculiar rendered led six.</p>
-        
-                  <p class="pb-6">Difficulty on insensible reasonable in. From as went he they. Preference themselves me as
-                    thoroughly
-                    partiality considered on in estimating. Middletons acceptance discovered projecting so is so or. In or
-                    attachment inquietude remarkably comparison at an. Is surrounded prosperous stimulated am me discretion
-                    expression. But truth being state can she china widow. Occasional preference fat remarkably now projecting
-                    uncommonly dissimilar. Sentiments projection particular companions interested do at my delightful. Listening
-                    newspaper in advantage frankness to concluded unwilling.</p>
-        
-                  <p class="pb-6">Adieus except say barton put feebly favour him. Entreaties unpleasant sufficient few pianoforte
-                    discovered
-                    uncommonly ask. Morning cousins amongst in mr weather do neither. Warmth object matter course active law
-                    spring six. Pursuit showing tedious unknown winding see had man add. And park eyes too more him. Simple excuse
-                    active had son wholly coming number add. Though all excuse ladies rather regard assure yet. If feelings so
-                    prospect no as raptures quitting.</p>
-        
-                  <div class="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
-                    Sportsman do offending supported extremity breakfast by listening. Decisively advantages nor
-                    expression
-                    unpleasing she led met. Estate was tended ten boy nearer seemed. As so seeing latter he should thirty whence.
-                    Steepest speaking up attended it as. Made neat an on be gave show snug tore.
                   </div>
-        
-                  <p class="pb-6">Exquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me
-                    everything.
-                    Is fine loud deal an rent open give. Find upon and sent spot song son eyes. Do endeavor he differed carriage
-                    is learning my graceful. Feel plan know is he like on pure. See burst found sir met think hopes are marry
-                    among. Delightful remarkably new assistance saw literature mrs favourable.</p>
-        
-                  <h2 class="text-2xl text-gray-800 font-semibold mb-4 mt-4">Uneasy barton seeing remark happen his has</h2>
-        
-                  <p class="pb-6">Guest it he tears aware as. Make my no cold of need. He been past in by my hard. Warmly thrown
-                    oh he common
-                    future. Otherwise concealed favourite frankness on be at dashwoods defective at. Sympathize interested
-                    simplicity at do projecting increasing terminated. As edward settle limits at in.</p>
-        
-                  <p class="pb-6">Dashwood contempt on mr unlocked resolved provided of of. Stanhill wondered it it welcomed oh.
-                    Hundred no
-                    prudent he however smiling at an offence. If earnestly extremity he he propriety something admitting convinced
-                    ye. Pleasant in to although as if differed horrible. Mirth his quick its set front enjoy hoped had there. Who
-                    connection imprudence middletons too but increasing celebrated principles joy. Herself too improve gay winding
-                    ask expense are compact. New all paid few hard pure she.</p>
-        
-                  <p class="pb-6">Breakfast agreeable incommode departure it an. By ignorant at on wondered relation. Enough at
-                    tastes really
-                    so cousin am of. Extensive therefore supported by extremity of contented. Is pursuit compact demesne invited
-                    elderly be. View him she roof tell her case has sigh. Moreover is possible he admitted sociable concerns. By
-                    in cold no less been sent hard hill.</p>
-        
-                  <p class="pb-6">Detract yet delight written farther his general. If in so bred at dare rose lose good. Feel and
-                    make two real
-                    miss use easy. Celebrated delightful an especially increasing instrument am. Indulgence contrasted sufficient
-                    to unpleasant in in insensible favourable. Latter remark hunted enough vulgar say man. Sitting hearted on it
-                    without me.</p>
-        
-                </div>
-        
-                <div class="w-full lg:w-1/4 m-auto mt-12 max-w-screen-sm">
-                  <div class="p-4 border-t border-b md:border md:rounded">
-                    <div class="flex py-2">
-                      <img src="https://randomuser.me/api/portraits/men/97.jpg"
-                        class="h-10 w-10 rounded-full mr-2 object-cover" />
-                      <div>
-                        <p class="font-semibold text-gray-700 text-sm"> Mike Sullivan </p>
-                        <p class="font-semibold text-gray-600 text-xs"> Editor </p>
-                      </div>
-                    </div>
-                    <p class="text-gray-700 py-3">
-                      Mike writes about technology
-                      Yourself required no at thoughts delicate landlord it be. Branched dashwood do is whatever it.
-                    </p>
-                    <button class="px-2 py-1 text-gray-100 bg-green-700 flex w-full items-center justify-center rounded">
-                      Follow 
-                      <i class='bx bx-user-plus ml-2' ></i>
-                    </button>
-                  </div>
-                </div>
-        
-              </div>
-            </main>
-            <!-- main ends here -->
-        
-          
           </div>
-    </div>
+      
+          <div class="flex flex-col lg:flex-row justify-center lg:space-x-12">
+      
+              <div class="px-4 lg:px-0 mt-12 text-gray-700 text-lg leading-relaxed w-full lg:w-3/4 text-center">
+                <p class="pb-6 text-center">Saat ini, bisnis makanan online semakin populer. Banyak orang, termasuk para ibu, mulai berjualan makanan dari rumah. Namun, salah satu tantangan dalam bisnis ini adalah memastikan makanan sampai ke pelanggan dalam kondisi baik. Kalau tidak dikemas dengan benar, makanan bisa tumpah, hancur, atau bahkan basi sebelum sampai ke tangan pembeli.</p>
+      
+                <p class="pb-6">Agar makanan tetap segar dan aman selama perjalanan, ada beberapa cara packing yang perlu diperhatikan. Yuk, simak tips berikut ini!</p>
+      
+                <p class="pb-6">1. Pisahkan Makanan Sesuai Suhunya
+                  Kalau mengirim makanan yang panas dan dingin, jangan dicampur dalam satu wadah. Misalnya, kalau mengirimkan salad dingin dengan ayam goreng panas, lebih baik dipisah. Ini supaya makanan tetap enak saat sampai di tangan pembeli. Nanti, pelanggan bisa mencampurnya sendiri sebelum dimakan.
+                  </p>
+      
+                <div class="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
+                  2. Gunakan Wadah yang Tepat
+                     jenis makanan butuh wadah yang berbeda. Untuk makanan panas, bisa pakai aluminium foil supaya suhunya tetap terjaga. Kalau mengirim kue kering, gunakan toples plastik agar tidak mudah hancur. Sementara itu, untuk makanan berkuah seperti sup atau sambal, pastikan wadahnya tertutup rapat supaya tidak tumpah saat dalam perjalanan
+
+                </div>
+      
+                <p class="pb-6">3. Jangan Biarkan Ada Ruang Kosong
+                  Kalau mengemas makanan seperti kue atau makanan dalam kaleng, pastikan wadahnya penuh supaya tidak berguncang dan rusak saat dikirim. Kalau masih ada celah kosong, isi dengan kertas roti atau plastik supaya makanan tetap aman selama perjalanan
+                  </p>
+      
+                <p class="pb-6">4. Simpan Makanan dengan Baik Sebelum Dikirim
+                  Jangan biarkan makanan begitu saja di meja sambil menunggu kurir datang. Kalau makanan dingin seperti es krim, simpan dulu di kulkas. Sementara itu, makanan panas bisa disimpan di tempat yang tertutup agar tetap hangat. Saat kurir tiba, baru keluarkan dan serahkan untuk dikirim
+                  </p>
+      
+                <p class="pb-6">5. Berikan Instruksi untuk Konsumen
+                  Untuk makanan tertentu, ada baiknya memberikan petunjuk kepada pembeli. Misalnya, kalau mengirim yogurt atau es krim, beri tahu pelanggan supaya langsung memasukkannya ke freezer begitu sampai. Dengan begitu, makanan tetap dalam kondisi terbaik saat dikonsumsi.
+                  </p>
+      
+                <p class="pb-6">Dengan packing yang tepat, makanan bisa sampai ke pelanggan dalam keadaan segar dan menarik. Ini tidak hanya membuat pelanggan senang, tetapi juga bisa meningkatkan reputasi bisnis makanan yang dijalankan. Jadi, jangan sampai salah dalam mengemas makanan, ya!
+                  Selamat berjualan dan semoga sukses! 😊
+                  </p>
+      
+      
+              </div>
+            
+      
+              </div>
+      
+      
+          </div>
+          </main>
+       
+          <!-- main ends here -->
+      
+      
+      </div>
+  </div>
 </section>

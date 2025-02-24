@@ -7,8 +7,7 @@
             <div class="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
                 <div class="w-full lg:w-2/3 xl:w-1/2">
                     <p class=" tracking-tighter text-white">
-                        <span class="font-semibold text-6xl">Keaslian Rasa,</span><br />
-                        <span class=" font-semibold text-5xl">Hangatkan Suasana</span>
+                        <span class="font-semibold text-6xl"><span id="auto-type"></span></span>
                     </p>
                     <p class="mt-10 text-base leading-7 text-white text-opacity-70">Dari taburan kecil di atas kopi,
                       campuran dalam kue, hingga bahan rahasia dalam masakan favoritmu, kayu manis menghadirkan sentuhan
@@ -106,53 +105,6 @@
       </div>
     </section>
 
-          
-
-    {{-- <div class="container  py-20">
-      <div class="row">
-        <div class="col">
-          <div class="max-w-xl mx-auto">
-            <div class="text-center ">
-              <div class="relative flex flex-col items-center" data-aos="fade-up">
-                <h1 class="text-5xl font-bold text-gray-900"> Tentang <span class="text-blue-500">Kami
-                  </span> </h1>
-                <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
-                  <div class="flex-1 h-2 bg-blue-200">
-                  </div>
-                  <div class="flex-1 h-2 bg-blue-400">
-                  </div>
-                  <div class="flex-1 h-2 bg-blue-600">
-                  </div>
-                </div>
-              </div>
-             
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="row d-flex justify-content-center align-items-center mt-20">
-        <div class="col-md-4"data-aos="fade-up-right">
-          <div
-          class=" md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Tempat Terbaik untuk  
-              <br class="hidden lg:inline-block">Memiliki Kayu Manis Berkualitas
-          </h1>
-          <p class="mb-8 leading-relaxed">Maniz adalah platform yang menghubungkan Anda dengan dunia kayu manis. Kami menyajikan artikel informatif dan menyediakan berbagai produk kayu manis berkualitas langsung dari sumber terbaik.</p>
-          <div class="flex justify-center">
-              <button class="inline-flex text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-800 rounded text-lg">Belanja Sekarang</button>
-              <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Baca Artikel</button>
-          </div>
-      </div>
-      </div>
-      <div class="col-md-6" data-aos="fade-up-left">
-          <div class="">
-            <img class="object-cover object-center rounded" alt="hero" src="{{url('img/gardening.jpg')}}">
-          </div>
-      </div>
-    </div>
-
-    </div>                                 --}}
     {{-- About Us --}}
   
     {{-- Our Porduct --}}
@@ -175,9 +127,7 @@
                   </div>
                 </div>
                 <p class="mb-12 text-base text-center text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus magni eius eaque?
-                  Pariatur
-                  numquam, odio quod nobis ipsum ex cupiditate?
+                 
                 </p>
               </div>
             </div>
@@ -191,9 +141,9 @@
                       <div class="item"data-aos="fade-up">  
                             <div class="rounded overflow-hidden border">
                               
-                                    <a href="#"></a>
+                                    <a href="/products"></a>
                                     <div class="relative">
-                                        <a href="#">
+                                        <a href="/products">
                                             <img class="w-full"
                                                 src="{{url('storage', $product->images[0])}}"
                                                 alt="Sunset in the mountains">
@@ -201,14 +151,14 @@
                                                 class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
                                             </div>
                                         </a>
-                                        <a href="#!">
+                                        <a href="/products">
                                             <div
                                                 class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
                                                 Photos
                                             </div>
                                         </a>
           
-                                        <a href="!#">
+                                        <a href="/products">
                                             <div
                                                 class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
                                                 <span class="font-bold">27</span>
@@ -229,7 +179,9 @@
                                         <span href="#" class=" text-base font-reguler text-gray-900 mr-1 flex flex-row items-center">
                                             
                                             <span class="ml-1">{{Number::currency($product->price, 'IDR')}}</span></span>
-                                            <button type="button" class="px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Beli Sekarang</button>
+                                           <a href="/product" class="btn px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            Beli Sekarang
+                                           </a>
                                     </div>
                                   </div>
                       </div>
@@ -260,9 +212,7 @@
             </div>
           </div>
           <p class="mb-12 text-base text-center text-gray-500">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus magni eius eaque?
-            Pariatur
-            numquam, odio quod nobis ipsum ex cupiditate?
+           
           </p>
         </div>
       </div>

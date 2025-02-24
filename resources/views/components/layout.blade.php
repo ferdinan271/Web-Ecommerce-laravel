@@ -61,8 +61,15 @@
   <script>
     AOS.init();
   </script>
-
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  
    <script>
+ var typed = new Typed(".auto-type",[
+      strings: ["Keaslian Rasa,<br>Hangatkan Suasana"],
+      typeSpeed: 30,
+    ])
+
+
     $('.owl-carousel').owlCarousel({
 autoplay:true,
 autoplayTimeout:2500,

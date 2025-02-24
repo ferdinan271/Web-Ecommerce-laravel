@@ -24,6 +24,7 @@ class ProductsPage extends Component
 
     #[Url]
     public $selected_brands= [];
+    use WithPagination;
 
     // add product to cart method
     public function addToCart($product_id){
@@ -41,6 +42,7 @@ class ProductsPage extends Component
     
     public function render()
     {
+       
         $productQuery = Product::query()->where('is_active',1);
 
         if(!empty($this-> selected_categories)){

@@ -4,7 +4,7 @@
         <div class="col-md-8">
             <div class="mx-auto  lg:text-center">
                 <div class="relative flex flex-col items-center"data-aos="fade-up">
-                    <h1 class="text-5xl font-bold text-gray-900"> Tentang<span class="text-blue-500"> kami
+                    <h1 class="text-5xl font-bold text-gray-900 "> Tentang<span class="text-blue-500"> kami
                       </span> </h1>
                     <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
                       <div class="flex-1 h-2 bg-blue-200">
@@ -27,7 +27,7 @@
             <div class="col">
                 
                 <div class="relative flex flex-col items-center"data-aos="fade-up">
-                    <h1 class="text-5xl font-bold text-gray-900"> Kenapa<span class="text-blue-500"> Kita ?
+                    <h1 class="text-5xl font-bold text-gray-900"> Kenapa<span class="text-blue-500"> SmartCinnamon ?
                       </span> </h1>
                     <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
                       <div class="flex-1 h-2 bg-blue-200">
@@ -81,7 +81,7 @@
     <div class="container mt-5">
         <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
             <div class="relative flex flex-col items-center"data-aos="fade-up">
-                <h1 class="text-5xl font-bold text-gray-900"> Anggota<span class="text-blue-500"> Kami
+                <h1 class="text-5xl font-bold text-gray-900"> Tim<span class="text-blue-500"> Kami
                   </span> </h1>
                 <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
                   <div class="flex-1 h-2 bg-blue-200">

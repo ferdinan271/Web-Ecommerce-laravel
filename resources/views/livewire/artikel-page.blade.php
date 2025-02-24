@@ -4,9 +4,9 @@
     <a rel="noopener noreferrer" href="/posts-detail" class="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-50">
         <img src="{{url('img/banner.jpeg')}}" alt="" class="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500">
         <div class="p-6 space-y-2 lg:col-span-5">
-            <h3 class="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline"></h3>
-            <span class="text-xs dark:text-gray-600">February 19, 2021</span>
-            <p> </p>
+            <h3 class="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Mendapatkan Hasil Berkualitas dengan cara Budidaya berikut</h3>
+            <span class="text-xs dark:text-gray-600">February 19, 2025</span>
+            <p>Kayu manis, yang memiliki nama ilmiah Cinnamomum verum, merupakan salah satu rempah yang telah digunakan sejak zaman dahulu. Tanaman ini berasal dari pohon berdaun hijau yang tumbuh di daerah tropis seperti Sri Lanka, India, Indonesia, dan Madagaskar. </p>
         </div>
     </a>
 

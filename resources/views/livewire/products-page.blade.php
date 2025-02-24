@@ -91,7 +91,7 @@
                 </div>
                 <!-- pagination start -->
                 <div class="flex justify-end mt-6">
-                    {{ $products->links() }}
+                    {{$products->links()}}
                 </div>
                 <!-- pagination end -->
             </div>

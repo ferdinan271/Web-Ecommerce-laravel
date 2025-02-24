@@ -11,6 +11,7 @@ use App\Livewire\CheckOutPage;
 use App\Livewire\HomePage;
 use App\Livewire\MyOrderDetailPage;
 use App\Livewire\MyOrdersPage;
+use App\Livewire\PostDetail;
 use App\Livewire\PostsDetail;
 use App\Livewire\Posts;
 use App\Livewire\ProductDetailPage;
@@ -26,8 +27,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth')->group(function (){
     Route::get('/checkout', CheckOutPage::class);
-    Route::get('/my-orders', MyOrdersPage::class);
-    Route::get('/my-orders/{order}', MyOrderDetailPage::class);
+    Route::get('/my-orders', MyOrdersPage::class)->name('my-orders');
+    Route::get('/my-orders/{order_id}', MyOrderDetailPage::class);
         
     Route::get('/success', SuccessPage::class)->name('success');
     Route::get('/successState', SuccessState::class)->name('successState');
@@ -35,8 +36,8 @@ Route::middleware('auth')->group(function (){
 
     
 });
-
 Auth::routes();
+
 
 
 Route::get('/', HomePage::class);
@@ -47,7 +48,8 @@ Route::get('/products', ProductsPage::class)->name('product');
 Route::get('/products/{slug}', ProductDetailPage::class)->name('product.show');
 Route::get('/cart', CartPage::class);
 Route::get('/artikel', ArtikelPage::class);
-Route::get('/artikel/{tag}', ArtikelDetailPage::class);
+Route::get('/artikel/{slug}', ArtikelDetailPage::class);
+Route::get('/posts-detail', PostDetail::class);
 
 
 
