@@ -1,127 +1,139 @@
 <section>
-   <div class="container">
-    <div class="row d-flex align-items-center py-48 justify-center">
+  <div class="container-fluid  masterabout">
+    <div class="row d-flex min-vh-100 align-items-center py-5 justify-content-center">
         <div class="col-md-8">
-            <div class="mx-auto  lg:text-center">
-                <div class="relative flex flex-col items-center"data-aos="fade-up">
-                    <h1 class="text-5xl font-bold text-gray-900 "> Tentang<span class="text-blue-500"> kami
-                      </span> </h1>
-                    <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
-                      <div class="flex-1 h-2 bg-blue-200">
-                      </div>
-                      <div class="flex-1 h-2 bg-blue-400">
-                      </div>
-                      <div class="flex-1 h-2 bg-blue-600">
-                      </div>
+            <div class="text-center">
+                <div class="position-relative d-flex flex-column align-items-center" data-aos="fade-up">
+                    <h1 class="display-5 fw-bold text-white"> Tentang <span class="text-success">Kami</span> </h1>
+                    <div class="d-flex w-25 mt-2 mb-4 overflow-hidden rounded">
+                        <div class="flex-fill bg-success bg-opacity-25" style="height: 5px;"></div>
+                        <div class="flex-fill bg-success bg-opacity-50" style="height: 5px;"></div>
+                        <div class="flex-fill bg-success" style="height: 5px;"></div>
                     </div>
-                  </div>
-                <p data-aos="fade-up" class="mt-6 text-xl text-gray-600">SmartCinnamon adalah platform digital yang dirancang untuk mengoptimalkan pengelolaan dan pemasaran produk kayu manis secara lebih luas. Melalui website ini, petani dan kelompok wanita tani dapat mengakses informasi seputar produksi, pemasaran digital, sertainovasi produk berbasis kayu manis. Dengan konsep ini, SmartCinnamon berperan dalam meningkatkandaya saing produk lokal dan mendukung ekonomi sirkular yang berkelanjutan.</p>
+                </div>
+                <p data-aos="fade-up" class="mt-4 fs-5 text-white">
+                    <strong>SmartCinnamon</strong> adalah platform digital yang dirancang untuk mengoptimalkan pengelolaan dan pemasaran produk kayu manis secara lebih luas. Melalui website ini, petani dan kelompok wanita tani dapat mengakses informasi seputar produksi, pemasaran digital, serta inovasi produk berbasis kayu manis. Dengan konsep ini, <strong>SmartCinnamon</strong> berperan dalam meningkatkan daya saing produk lokal dan mendukung ekonomi sirkular yang berkelanjutan.
+                </p>
             </div>
         </div>
     </div>
-   </div>
-    
-    
-    <div class="container py-10 ">
-        <div class="row py-10 ">
-            <div class="col">
-                
-                <div class="relative flex flex-col items-center"data-aos="fade-up">
-                    <h1 class="text-5xl font-bold text-gray-900"> Kenapa<span class="text-blue-500"> SmartCinnamon ?
-                      </span> </h1>
-                    <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
-                      <div class="flex-1 h-2 bg-blue-200">
-                      </div>
-                      <div class="flex-1 h-2 bg-blue-400">
-                      </div>
-                      <div class="flex-1 h-2 bg-blue-600">
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
+</div>
 
-        <div  class="row mt-10 d-flex justify-content-center gap-4 ">
-                    <div class="col-md-3"data-aos="fade-up">
-                        <div class="card shadow " style="height: 44vh">
-                                
-                                <div class="card-body text-center " >
-                                    <h1 class=" text-2xl fw-bold pt-3">Cita Rasa Alami</h1>
-                                <p class="p-3">SmartCinnamon percaya bahwa cita rasa alami adalah kunci untuk pengalaman kuliner yang luar biasa. Kayu manis yang kami sajikan memiliki rasa yang kaya dan aroma menggoda, memberikan sentuhan istimewa dalam setiap hidangan.
-                                </p>
-                                </div>
+    
+    
+    <section>
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col text-center">
+                    <div class="position-relative d-flex flex-column align-items-center" data-aos="fade-up">
+                        <h1 class="display-5 fw-bold text-dark">Kenapa <span class="text-success">SmartCinnamon?</span></h1>
+                        <div class="d-flex w-25 mt-2 mb-4 overflow-hidden rounded">
+                            <div class="flex-fill bg-success bg-opacity-25" style="height: 5px;"></div>
+                            <div class="flex-fill bg-success bg-opacity-50" style="height: 5px;"></div>
+                            <div class="flex-fill bg-success" style="height: 5px;"></div>
                         </div>
                     </div>
-                    <div class="col-md-3"data-aos="fade-up">
-                        <div class="card shadow" style="height: 44vh">
-                               
-                                <div class="card-body text-center" >
-                                    <h1 class=" text-2xl fw-bold">Produk yang Terinovasi</h1>
-                                <p class="p-1">Kami menggabungkan tradisi dengan inovasi, menghadirkan produk kayu manis yang tidak hanya alami, tetapi juga telah melalui proses inovasi untuk memperkaya pengalaman dan cita rasa. Setiap produk dirancang untuk memberikan pengalaman yang lebih baik dalam setiap sajian Anda.
-                                </p>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3"data-aos="fade-up">
-                        <div class="card shadow pt-3" style="height: 44vh">
-                                
-                                <div class="card-body text-center" >
-                                    <h1 class=" text-2xl fw-bold">Langsung dari Petani</h1>
-                                <p class="p-3">SmartCinnamon berkomitmen untuk menjalin hubungan langsung dengan petani lokal. Dengan membeli kayu manis langsung dari mereka, kami memastikan kualitas terbaik sekaligus mendukung pertanian berkelanjutan dan ekonomi lokal.
-                                </p>
-                                </div>
-                        </div>
-                    </div>
-                    
-        </div>
+                </div>
+            </div>
         
-    </div>
-
+            <div class="row mt-4 d-flex justify-content-center gap-4">
+                <div class="col-md-3" data-aos="fade-up">
+                    <div class="card shadow bg-success h-100">
+                        <div class="card-body  text-center text-white">
+                            <h5 class="fw-bold pt-3">Cita Rasa Alami</h5>
+                            <p class="p-3 fw-medium  ">SmartCinnamon percaya bahwa cita rasa alami adalah kunci untuk pengalaman kuliner yang luar biasa. Kayu manis yang kami sajikan memiliki rasa yang kaya dan aroma menggoda, memberikan sentuhan istimewa dalam setiap hidangan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card shadow bg-success h-100">
+                        <div class="card-body text-center text-white">
+                            <h5 class="fw-bold mt-2 mb-3">Produk yang Terinovasi</h5>
+                            <p class="p-1 fw-medium">Kami menggabungkan tradisi dengan inovasi, menghadirkan produk kayu manis yang tidak hanya alami, tetapi juga telah melalui proses inovasi untuk memperkaya pengalaman dan cita rasa. Setiap produk dirancang untuk memberikan pengalaman yang lebih baik dalam setiap sajian Anda.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="card shadow bg-success h-100">
+                        <div class="card-body  text-center text-white">
+                            <h5 class="fw-bold mt-2">Langsung dari Petani</h5>
+                            <p class="p-3 fw-medium ">SmartCinnamon berkomitmen untuk menjalin hubungan langsung dengan petani lokal. Dengan membeli kayu manis langsung dari mereka, kami memastikan kualitas terbaik sekaligus mendukung pertanian berkelanjutan dan ekonomi lokal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div class="container mt-5">
-        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-            <div class="relative flex flex-col items-center"data-aos="fade-up">
-                <h1 class="text-5xl font-bold text-gray-900"> Tim<span class="text-blue-500"> Kami
-                  </span> </h1>
-                <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
-                  <div class="flex-1 h-2 bg-blue-200">
-                  </div>
-                  <div class="flex-1 h-2 bg-blue-400">
-                  </div>
-                  <div class="flex-1 h-2 bg-blue-600">
-                  </div>
+        <div class="mx-auto text-center px-4 py-5">
+            <div class="position-relative d-flex flex-column align-items-center" data-aos="fade-up">
+                <h1 class="display-5 fw-bold text-dark">Tim <span class="text-success">Kami</span></h1>
+                <div class="d-flex w-25 mt-2 mb-4 overflow-hidden rounded">
+                    <div class="flex-fill bg-success bg-opacity-25" style="height: 5px;"></div>
+                    <div class="flex-fill bg-success bg-opacity-50" style="height: 5px;"></div>
+                    <div class="flex-fill bg-success" style="height: 5px;"></div>
                 </div>
-              </div>
-
-            <div data-aos="fade-up" class="grid grid-cols-1 my-5 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                <a href="#" class="group">
-                    <img src="{{ url('img/ibu.svg') }}"
-                        alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
-                        class="aspect-[4/5] w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75">
-                    <h3 class="mt-4 text-l font-bold text-center text-gray-700">Lailatur Rahmi, S.Pd, M.Pd.</h3>
-                </a>
-                <a href="#" class="group">
-                    <img src="{{ url('img/rafi.svg') }}"
-                        alt="Rafii Ahmad Fahreza"
-                        class="aspect-[4/5] w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75">
-                    <h3 class="mt-4 text-l font-bold text-center text-gray-700">Rafii Ahmad Fahreza</h3>
-                </a>
-                <a href="#" class="group">
-                    <img src="{{ url('img/fikra.svg') }}"
-                        alt="FIkra Wais Alkani"
-                        class="aspect-[4/5] w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75">
-                    <h3 class="mt-4 text-l font-bold text-center text-gray-700">FIkra Wais Alkani</h3>
-                </a>
-                <a href="#" class="group">
-                    <img src="{{ url('img/tasya.svg') }}"
-                        alt="Tasya Aprilia"
-                        class="aspect-[4/5] w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75">
-                    <h3 class="mt-4 text-l font-bold text-center text-gray-700">Tasya Aprilia</h3>
-                </a>
-
+            </div>
+    
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-3 justify-content-center" data-aos="fade-up">
+                <div class="col">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow bg-success bg-success ">
+                            <img src="{{ url('img/ibu.svg') }}" alt="Lailatur Rahmi, S.Pd, M.Pd."
+                                class="card-img-top rounded">
+                            <div class="card-body text-center">
+                                <h5 class="fw-semibold text-white ">Lailatur Rahmi, S.Pd, M.Pd.</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="col">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow bg-success ">
+                            <img src="{{ url('img/rafi.svg') }}" alt="Rafii Ahmad Fahreza"
+                                class="card-img-top rounded">
+                            <div class="card-body text-center">
+                                <h5 class="fw-semibold text-white ">Rafii Ahmad Fahreza</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="col">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow bg-success ">
+                            <img src="{{ url('img/fikra.svg') }}" alt="Fikra Wais Alkani"
+                                class="card-img-top rounded">
+                            <div class="card-body text-center">
+                                <h5 class="fw-semibold text-white ">Fikra Wais Alkani</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="col">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow bg-success ">
+                            <img src="{{ url('img/tasya.svg') }}" alt="Tasya Aprilia"
+                                class="card-img-top rounded">
+                            <div class="card-body text-center">
+                                <h5 class="fw-semibold text-white ">Tasya Aprilia</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+    
+    
 
     {{-- <dh-component>
         <div class="container flex justify-center mx-auto ">

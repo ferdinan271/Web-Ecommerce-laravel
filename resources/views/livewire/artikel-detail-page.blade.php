@@ -1,38 +1,26 @@
-    <section>
-        <div class="container">
+<section class="py-5">
+    <div class="container">
+        <div class="col-lg-8 mx-auto border bg-light p-5 rounded">
 
-            <div class="max-w-screen-lg mx-auto">
+            <main class="mt-4">
 
-                <main class="mt-10">
-           
-            
-           
-                <div class="md:mb-0 w-full mx-auto relative">
-                    
-                 
-                        <img src="{{url('storage',$artikel->image)}}" class="w-full object-cover lg:rounded" style="height: 28em;"/>
-                    
-                    <div class="px-4 mt-5 lg:px-0 flex flex-col lg:flex-row justify-center lg:space-x-12">
-                        <h2 class="text-4xl text-center font-semibold text-gray-800 leading-tight">
-                           {{$artikel->title}}
-                        </h2>
-                        </div>
+                <!-- Gambar Artikel -->
+                <div class="text-center">
+                    <img src="{{ url('storage', $artikel->image) }}" class="w-100 img-fluid rounded" style="height: 28em; object-fit: cover;" alt="{{ $artikel->title }}">
                 </div>
-            
-                <div class="flex flex-col lg:flex-row justify-center lg:space-x-12">
-            
-                    <div class="px-4 lg:px-0 mt-12 text-gray-700 text-lg leading-relaxed w-full lg:w-3/4">
-                    <p class="pb-6 text-center">{{$artikel->description}}</p>
-            
-                    </div>
-            
-            
+
+                <!-- Judul Artikel -->
+                <div class="mt-4 text-center">
+                    <h2 class="fw-bold text-dark">{{ $artikel->title }}</h2>
                 </div>
-                </main>
-             
-                <!-- main ends here -->
-            
-            
-            </div>
+
+                <!-- Deskripsi Artikel -->
+                <div class="mt-4 text-center">
+                    <p class="text-muted fs-5">{{ $artikel->description }}</p>
+                </div>
+
+            </main>
+
         </div>
-    </section>
+    </div>
+</section>

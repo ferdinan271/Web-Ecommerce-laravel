@@ -5,8 +5,11 @@ namespace App\Livewire;
 use App\Models\Order;
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
+use Livewire\Attributes\Title;
 use Livewire\WithPagination;
 
+
+#[Title('Pesanan  ')]
 class MyOrdersPage extends Component
 {
     use WithPagination;

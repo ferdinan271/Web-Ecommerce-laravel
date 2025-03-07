@@ -1,30 +1,38 @@
-<section class="dark:bg-gray-100 dark:text-gray-800">
-    <div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
-  
-    <a rel="noopener noreferrer" href="/posts-detail" class="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-50">
-        <img src="{{url('img/banner.jpeg')}}" alt="" class="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500">
-        <div class="p-6 space-y-2 lg:col-span-5">
-            <h3 class="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Mendapatkan Hasil Berkualitas dengan cara Budidaya berikut</h3>
-            <span class="text-xs dark:text-gray-600">February 19, 2025</span>
-            <p>Kayu manis, yang memiliki nama ilmiah Cinnamomum verum, merupakan salah satu rempah yang telah digunakan sejak zaman dahulu. Tanaman ini berasal dari pohon berdaun hijau yang tumbuh di daerah tropis seperti Sri Lanka, India, Indonesia, dan Madagaskar. </p>
-        </div>
-    </a>
-
-        
-        <div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-           @foreach ($artikel as $tikel)
-           <a rel="noopener noreferrer" href="/artikel/{{$tikel->slug}}" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50">
-            <img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="{{url('storage', $tikel -> image)}}">
-            <div class="p-6 space-y-2">
-                <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">{{$tikel->title}}s</h3>
-                <span class="text-xs dark:text-gray-600">January 21, 2021</span>
-                <p>{{ Str::limit($tikel->description, 150) }}</p>
+<section class=" text-dark py-4">
+    <div class="container bg-light rounded p-3">
+        <!-- Artikel Utama -->
+        <a href="/posts-detail" class="row align-items-center text-decoration-none text-dark  "  >
+            <div class="col-lg-7">
+                <img src="{{ url('img/banner.jpeg') }}" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col-lg-5 p-4 ">
+                <h3 class="fs-2 fw-bold text-success">Mendapatkan Hasil Berkualitas dengan cara Budidaya berikut</h3>
+                <span class="text-muted d-block small mb-2">February 19, 2025</span>
+                <p>Kayu manis, yang memiliki nama ilmiah Cinnamomum verum, merupakan salah satu rempah yang telah digunakan sejak zaman dahulu. Tanaman ini berasal dari pohon berdaun hijau yang tumbuh di daerah tropis seperti Sri Lanka, India, Indonesia, dan Madagaskar.</p>
             </div>
         </a>
-           @endforeach
+
+        <!-- Daftar Artikel -->
+        <div class="row mt-4">
+            @foreach ($artikels as $artikel)
+            <div class="col-md-6 col-lg-4 mb-4">
+                <a href="/artikel/{{$artikel->slug}}" class="card border-0 shadow-sm text-decoration-none text-dark">
+                    <img src="{{ url('storage', $artikel->image) }}" class="card-img-top rounded" alt="{{$artikel->title}}">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold text-success">{{$artikel->title}}</h5>
+                        <span class="text-muted small d-block mb-2">January 21, 2025</span>
+                        <p class="card-text">{{ Str::limit($artikel->description, 150) }}</p>
+                    </div>
+                </a>
+            </div>
+            @endforeach
         </div>
-        <div class="flex justify-center">
-            <button type="button" class="px-6 py-3 text-sm rounded-md hover:underline dark:bg-gray-50 dark:text-gray-600">Load more posts...</button>
+
+        <!-- Tombol Load More -->
+        <div class="row d-flex justify-content-end mt-4 me-5">
+            <div class="col-md-4">
+                {{$artikels->links()}}
+            </div>
         </div>
     </div>
 </section>

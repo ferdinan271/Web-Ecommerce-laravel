@@ -5,7 +5,9 @@ namespace App\Livewire;
 use App\Models\Order;
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
+use Livewire\Attributes\Title;
 
+#[Title('Pemesanan Berhasil  ')]
 class SuccessState extends Component
 {
     public function render()

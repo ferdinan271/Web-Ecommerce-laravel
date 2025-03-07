@@ -13,18 +13,20 @@ use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
 
-#[Title('Product-Page')]
+#[Title('Produk')]
 class ProductsPage extends Component
 {
     use LivewireAlert;
-    use WithPagination;
 
     #[Url]
     public $selected_categories= [];
 
     #[Url]
     public $selected_brands= [];
+        
+    
     use WithPagination;
+        protected $paginationTheme = 'bootstrap';
 
     // add product to cart method
     public function addToCart($product_id){
@@ -53,7 +55,7 @@ class ProductsPage extends Component
         }
 
         return view('livewire.products-page',[
-            'products' => $productQuery->paginate(6),
+            'products' => $productQuery->paginate(6 ),
             'brands' => Brand::where('is_active',1)-> get(['id','name','slug']),
             'categories' => Category::where('is_active',1)-> get(['id','name','slug']),
         ]);

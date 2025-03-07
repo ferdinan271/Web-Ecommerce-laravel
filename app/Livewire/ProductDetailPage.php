@@ -6,8 +6,11 @@ use App\Helpers\CartManagement;
 use App\Livewire\Partials\Navbar;
 use App\Models\Product;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
+
+#[Title('Produk Detail  ')]
 class ProductDetailPage extends Component
 {
     use LivewireAlert;

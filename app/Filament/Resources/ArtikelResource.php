@@ -4,22 +4,26 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\ArtikelResource\Pages;
 use App\Filament\Resources\ArtikelResource\RelationManagers;
-use App\Models\Artikel;
+use App\Models\artikel;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\RichEditor;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Tabs;
 use Filament\Forms\Components\Tabs\Tab;
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
+use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
+use Illuminate\Support\Str;
 
 class ArtikelResource extends Resource
 {
@@ -31,7 +35,8 @@ class ArtikelResource extends Resource
     {
         return $form
         ->schema([
-            Tabs::make('Heading')
+            Section::make([
+                Tabs::make('Heading')
                 ->tabs([
                     Tab::make('Cover Blog')
                         ->columnSpanFull()
@@ -41,30 +46,51 @@ class ArtikelResource extends Resource
                                 ->directory('blogs')
                                 
                         ]),
-                    Tab::make('Description Blog')
-                        ->columnSpanFull()
-                        ->schema([
-                            TextInput::make('title')
-                            ->required()
-                            ->maxLength(255),
-                        
-                        TagsInput::make('slug')
-                            ->required()
-                            ->separator(','),
-                        ]),
-                    Tab::make('Content Blog')
-                        ->columnSpanFull()
-                        ->schema([
-                            RichEditor::make('description')
-                                ->columnSpanFull()
-                                ->required()
-                                
-                        ]),
+                                    Tab::make('Description Blog')
+                                        ->columnSpanFull()
+                                        ->schema([
+                                        
+                                            TextInput::make('title')
+                                            ->required()
+                                            ->maxlength(255)
+                                            ->live(onBlur: true)
+                                            ->afterStateUpdated(fn(string $operation, $state, Set $set)
+                                            => $operation === 'create' ? $set('slug', Str::slug($state)) : null),
+                                        TextInput::make('slug')
+                                            ->maxlength(255)
+                                            ->disabled()
+                                            ->required()
+                                            ->dehydrated()
+                                            ->unique(artikel::class, 'slug', ignoreRecord: true)
+                                    ]),
+
+                                    Tab::make('Content Blog')
+                                    ->columnSpanFull()
+                                    ->schema([
+                                        RichEditor::make('content')
+                                            ->columnSpanFull()
+                                            ->required()
+                                            ->toolbarButtons([
+                                                'attachFiles',
+                                                'blockquote',
+                                                'bold',
+                                                'bulletList',
+                                                'codeBlock',
+                                                'h2',
+                                                'h3',
+                                                'italic',
+                                                'link',
+                                                'orderedList',
+                                                'redo',
+                                                'strike',
+                                                'underline',
+                                                'undo',
+                                            ])
+                                    ]),
                     ]),
-                Toggle::make('is_active')
-                ->required()
-                ->default(true),
-                ]);
+                
+                ]),
+            ]);
                 
        
     }

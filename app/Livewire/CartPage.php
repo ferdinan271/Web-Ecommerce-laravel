@@ -4,7 +4,10 @@ namespace App\Livewire;
 
 use App\Helpers\CartManagement;
 use App\Livewire\Partials\Navbar;
+use Livewire\Attributes\Title;
 use Livewire\Component;
+
+#[Title('Keranjang  ')]
 
 class CartPage extends Component
 {

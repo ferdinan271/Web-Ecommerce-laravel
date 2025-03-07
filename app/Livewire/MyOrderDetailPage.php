@@ -5,8 +5,11 @@ namespace App\Livewire;
 use App\Models\Address;
 use App\Models\Order;
 use App\Models\Order_item;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
+
+#[Title('Pesanan  ')]
 class MyOrderDetailPage extends Component
 {
     public $order_id;

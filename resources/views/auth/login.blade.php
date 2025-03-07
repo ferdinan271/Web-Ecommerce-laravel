@@ -1,11 +1,11 @@
     <x-layout>
-<div class="container mt-5">
+<div class="container mt-5 min-vh-100">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
                     <div>Login</div>
-                    <a href="/register" class="text-blue-500">Belum Memiliki Akun ?</a>
+                    <a href="/register" class="text-success fw-semibold">Belum Memiliki Akun ?</a>
                 </div>
                 
                 
@@ -56,7 +56,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-success">
                                     {{ __('Login') }}
                                 </button>
                     
